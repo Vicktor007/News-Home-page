@@ -1,0 +1,75 @@
+* {
+    border: 1px solid red;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+/* @font-face {
+    font-family: Inter;
+    src: url(static/inter-Bold.ttf);
+} */
+
+.item1 { grid-area: header; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'main main main main right right'
+ 'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+    width: 90%;
+    height: 20%;
+}
+
+.item2 {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item2 > img {
+    width: 100%;
+    height: 50%;
+}
+
+.item2 > h1 {
+    width: 45%;
+    height: 45%;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.item2 > p {
+    width: 45%;
+    height: 25%;
+}
+
+ .item2 > button {
+    width: 25%;
+    height: 20%;
+    float: right;
+    margin-left: 45%;
+ }
+ 
+
+
